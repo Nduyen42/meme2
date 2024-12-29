@@ -1,0 +1,98 @@
+@charset "utf-8";
+/* CSS Document */
+.bg-trang-70{ background-color: rgba(255,255,255,0.5)}
+#hero
+{
+	padding-top: 80px;
+	padding-bottom: 80px;
+	background-image: url("../images/bg-chan-hero.png");
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	width: 100%
+	
+}
+.wel
+{
+	background-image: url("../images/bg-welcome.png"), url("../images/a-xinchao.png"), url("../images/bg-banh.png");
+	background-repeat: no-repeat, no-repeat,  no-repeat;
+	background-position: left center, 90% center, center top;
+	
+}
+@media (max-width:900px){
+	.wel
+{
+/*	background-image: url("../images/bg-welcome.png"), url("../images/a-xinchao.png");
+	background-repeat: no-repeat, no-repeat;*/
+	background-position: left center, right center, center top;
+	background-size: 20%, 50%;
+	background-color: rgba(255,255,255,0.5)
+	
+}
+}
+@media (max-width:1200px){
+	.wel
+{
+/*	background-image: url("../images/bg-welcome.png"), url("../images/a-xinchao.png");
+	background-repeat: no-repeat, no-repeat;
+	background-position: left center, right center;*/
+	background-size: 20%, 50%
+	
+}
+}
+#carouselExampleIndicators1{ overflow: hidden; width: 100%}
+#combo .card
+{ 
+	transition:all 1s;
+	background-color: var(--white);
+	border: none;
+	
+}
+#combo .card h2{ color: var(--secondary)}
+#combo .card:hover
+{
+	background-color: var(--secondary);
+
+}
+#combo .card:hover >h3,
+#combo .card:hover >h2
+{ color: #fff}
+.tphan
+{
+	background-image:url("../images/bg-chan-hero.png"),url("../images/ingredient_bg-1 1.png");
+	background-repeat: no-repeat,no-repeat;
+	background-position: center bottom, center top
+}
+
+
+
+
+@media(max-width:1000px)
+{
+.tphan
+{background-size: 35%, cover;
+background-position: 300% bottom,left top}
+}
+
+@media(max-width:600px){
+	.tphan{
+background-size: 80%, cover;
+background-position: 300% bottom, left top;
+}
+}
+.tphan h1, .tphan h3
+{ color: rgba(240,170,171,1.00)}
+
+.menu.badge
+{padding: 5px 15px;
+margin-left: 0}
+.td-mon{position: relative; color: azure}
+.td-mon:after
+{content:"";
+position: absolute;
+max-width: 30%;
+height: 5px;
+left: 101%; top: 60%;
+border-top: 2px dotted rgb(0,0,0,0.5);
+overflow: hidden
+}
+.menu .nav-link img {width:80px; height:auto}
